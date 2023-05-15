@@ -1,4 +1,4 @@
-module tb_ftmodule;
+module tb_ftm;
 
 logic clk;
 logic we_a;
@@ -22,7 +22,7 @@ logic done ;
 logic recover ;	
 logic reset;
 
-ft_module dut(
+ftm dut(
     .clk_i   		(clk),
     // comparator inputs
     .we_a_i			(we_a),

@@ -1,4 +1,4 @@
-module ft_module
+module ftm
 #(
   parameter ADDR_WIDTH = 5,
   parameter DATA_WIDTH = 32
