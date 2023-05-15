@@ -33,6 +33,7 @@ module ftm
   input  logic		done_i, 	
   output logic		recover_o, 	
   output logic    reset_o,
+  output logic    error_o,
   output logic    recovering_o
 );
 //ft safememory (substituting sgrp,spc,scsr) 
@@ -47,6 +48,8 @@ module ftm
   assign we_ftmem = we_a_i & we_b_i & ~error;
 
   assign recovery_done = done_i;
+
+  assign error_o = reset_o;
 
   ft_memory ftmem
   (
